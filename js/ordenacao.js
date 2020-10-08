@@ -1,11 +1,11 @@
 function ordenacao(array){
 
     for (var i = 0; i < array.length; i++) {
-        for (var q = i; q < array.length; q++) {
-            if (array[i]>array[q]) {
+        for (var j = i; j < array.length; j++) {
+            if (array[i]>array[j]) {
                 aux = array[i];
-                array[i]=array[q];
-                array[q]=aux;
+                array[i]=array[j];
+                array[j]=aux;
             }
         }
     }
